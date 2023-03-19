@@ -1,0 +1,13 @@
+  <svg xmlns="http://www.w3.org/2000/svg">
+      <circle cx="25" cy="25" r="25" stroke="blue" fill="Lightblue" />
+      <line x1="0" y1="0" x2="50" y2="50" stroke="red" />
+    </svg>
+
+
+<!--style="border: 1px solid black;" 可打在xmlns前面那句裡-->
+
+<!--
+    1. 在網頁上可以看到<svg>標籤, 一知道他是屬於svg範疇, 
+       可用來做繪圖及動畫效果等等, 且不會產生模糊現象
+    2.可將svg放在外部檔案, 副檔名是svg, 然後使用img標籤載入
+    3.要記得在svg標籤家xmlns屬性: xmlsn="http://www.w3.org/2000/svg"-->

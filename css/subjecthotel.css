@@ -1,0 +1,24 @@
+body{
+    background-color: #4e4b4f;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #892e2e;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  }

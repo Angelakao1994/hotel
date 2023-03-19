@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navebar practice</title>
+        <meta charset="UTF-8">
+        <!-- 響應式網站 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Boostrap 導入程式 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+        <!--連結css-->
+        <link rel="stylesheet" href="/hotel/css/navbar.css">
+
+    </head>
+
+    <body>
+   
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <!--品牌logo-->
+                <a class="navbar-brand" href="#"><img width="80px" hight="80px" src="../image/logo.png"></a>
+
+                <!--part1: phone, 5.0版本bootstrap裡會有bs,若舊版就沒有-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                    <span class="navbar-toggler-icon"></span>
+                    <!--toggler-icon就是漢堡, 若沒有用這個就不會呈現漢堡圖示-->
+                </button>
+
+                <!--par2: laptop-->
+                <div class="collapse navbar-collapse" id="linkbar">
+                    <!--列出內容-->
+                    <ul class="navbar-nav me-auto"> 
+                        <!--navbar-nav 是讓它變成水平橫向, me-auto 自動分成兩邊擴散-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">首頁</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">酒店公告</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">主題酒店</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">樂園門票</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">精彩演藝</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">食尚饗宴</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">關於我們</a>
+                        </li>
+                    </ul>
+                    <!--列出到header右邊-->
+
+                </div>
+         <form style="width:300px" class="input-group">
+                    <input class="form-control me-3" type="search" placeholder="搜尋">
+                    <button class="btn btn-success" type="submit">搜尋</button>
+
+                </form>
+
+
+           
+
+
+        </nav>
+
+
+    </body>
+
+    
+</html>

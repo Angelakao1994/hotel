@@ -1,0 +1,38 @@
+
+/*網頁背景色*/
+body{
+    background-color:rgb(250, 185, 131);
+}
+/*navbar整體高度*/
+nav{
+    height:70px;
+}
+/*navbar滑鼠滑過呈現的高度*/
+.nav-link{
+    padding:20px;
+}
+/*navbar底色*/
+.navbar{
+    background-color: rgb(248, 210, 179);
+}
+/*字體顏色及大小*/
+li a{
+    color:rgb(0, 0, 0) !important;
+    font-size:20px;
+}
+/*字體被景色及字體色*/
+li a:hover{
+    color:rgb(255, 255, 255) !important;
+    background-color: rgb(243, 159, 110);
+}
+
+
+/*調整手機版本檢視視窗*/
+@media(max-width:600px){
+    nav{
+        height:auto;
+    }
+    .nav-link{
+        padding:10px;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>樂園門票</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 引用 Bootstrap 的 CSS 文件 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/ticket.css">
+    
+    <!-- 引用 jQuery 库 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- 引用 Bootstrap 的 JavaScript 文件 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+	<div class="container">
+		<h1>歡迎來到楊先森樂園</h1>
+        <br>
+
+        <h2>園區介紹</h2>
+            <hr>
+		<p>楊先森樂園位於台灣南部，佔地面積達10萬平方公尺，是台灣最大的主題樂園之一。</p>
+		<p>樂園裡有多條刺激的過山車、各種好玩的娛樂設施、美食小吃等等，讓遊客可以盡情享受遊樂的樂趣。</p>
+		<p>此外，樂園的綠化設計也非常優秀，每年春季時節更有櫻花、桃花等美麗的花卉盛開，吸引了無數遊客前來觀賞。</p>
+		<p>歡迎大家前來楊先森樂園遊玩，度過一個愉快的假期！</p>
+            <br>
+
+		<div class="row">
+			<div class="col-sm-3">
+				<img src="../image/rollercoaster.jpg" alt="Roller Coaster" class="img-responsive">
+				<h3>雲霄飛車</h3>
+				<p>激烈刺激，飛馳於高空！</p>
+			</div>
+			<div class="col-sm-3">
+				<img src="../image/ferriswheel.jpg" alt="Ferris Wheel" class="img-responsive">
+				<h3>摩天輪</h3>
+				<p>俯瞰城市，享受美好風景！</p>
+			</div>
+			<div class="col-sm-3">
+				<img src="../image/carousel.jpg" alt="Carousel" class="img-responsive">
+				<h3>旋轉木馬</h3>
+				<p>經典遊樂設施，適合所有年齡段的遊客！</p>
+			</div>
+			<div class="col-sm-3">
+				<img src="../image/bumpercar.jpg" alt="Bumper Cars" class="img-responsive">
+				<h3>碰碰車</h3>
+				<p>享受刺激的碰撞，成為王者！</p>
+			</div>
+
+            
+		</div>
+
+        
+
+
+		<hr>
+		<h3>開放</h3>
+		<ul>
+			<li>周一至周五：上午10:00至下午6:00</li>
+			<li>周六、周日和假日：上午9:00至下午7:00</li>
+		</ul>
+		<hr>
+		<form>
+            <h3>選擇門票</h3>
+			<div class="form-group">
+				<label class="radio-inline">
+					<input type="radio" name="ticket" value="adult" checked> 成人票 ($550)
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="ticket" value="child"> 兒童票 ($300)
+				</label>
+			</div>
+			<div class="form-group">
+				<label for="quantity">選擇數量</label>
+				<input type="number" class="form-control" id="quantity" value="1" min="1">
+			</div>
+			<button type="button" class="btn btn-primary" onclick="calculatePrice()">計算票價</button>
+			<hr>
+			<p id="price">Total：$0</p>
+		</form>
+	</div>
+
+
+	<script>
+		function calculatePrice() {
+			// 獲取選擇的門票類型和數量
+			var ticketType = $("input[name='ticket']:checked").val();
+			var quantity = $("#quantity").val();
+			// 計算票價
+			var price = 0;
+			if (ticketType === "adult") {
+				price = 550;
+			} else if (ticketType === "child") {
+				price = 300;
+			}
+			price *= quantity;
+			// 更新顯示的票價
+			$("#price").text("門票價格：$" + price);
+		}
+	</script>
+
+    
+</body>
+</html>
