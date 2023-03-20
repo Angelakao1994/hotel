@@ -122,6 +122,12 @@ li a:hover{
   padding: 80px 0;
 }
 
+/* 設置搜尋框的位置 */
+.search-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
 
 
 

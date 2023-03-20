@@ -7,46 +7,23 @@
     
     <title>楊先森梅酒</title>
     <!-- Bootstrap CSS -->
-        <!-- Custom CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <!--html-->
-    <link rel="stylesheet" href="../html/subjecthotel.html">
-    <link rel="stylesheet" href="../html/ticket.html">
-      <!--css-->
-    <link rel="stylesheet" href="style.css">
+    <!--上面這行是將index.css導入頁面的做法, 此舉將不會導致程式碼在一個頁面呈現過多行數-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
-       <!--上面這行是將index.css導入頁面的做法, 此舉將不會導致程式碼在一個頁面呈現過多行數-->
-    <link rel="stylesheet" href="../css/subjecthotel.css">
-    <link rel="stylesheet" href="../html/ticket.css">
-     <!--js-->
-    <link rel="stylesheet" href="../js/index.js">
-    <link rel="stylesheet" href="../html/ticket.js">
-
-   
-
-
-    <style>
-      /* 設置搜尋框的位置 */
-      .search-container {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-      }
-    </style>
-
 
 </head>
-
 
 <body>
     
  <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img width="80px" hight="80px" src="../image/logo.png"></a>
+    <a class="navbar-brand" href="index.html"><img width="80px" hight="80px" src="../image/logo.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">首頁</a>
+          <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="announcement.html">酒店公告</a>
@@ -177,22 +154,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="../js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function() {
-      $('.nav-link').click(function(e) {
-        e.preventDefault(); // 阻止默認行為
-        var href = $(this).attr('href'); // 獲取目標 URL
-        window.location.href = href; // 跳轉到目標 URL
-      });
-    });
-    </script>
-
-
-
-
-
+  <script src="../js/index.js"></script>
 
 </body>
 </html>
