@@ -133,3 +133,11 @@ li a:hover{
 .nav-link:hover {
   color: #844141;
 }
+
+.open-time{
+   list-style: none;
+}
+
+#quantity{
+    width: 500px;
+}

@@ -5,3 +5,11 @@ URL設置為我們要跳轉到的URL，這樣就能在當前頁面中跳轉，�
 function goToPage(url) {
     window.location.href = url;
   }
+
+  $(document).ready(function() {
+    $('.nav-link').click(function(e) {
+      e.preventDefault(); // 阻止默認行為
+      var href = $(this).attr('href'); // 獲取目標 URL
+      window.location.href = href; // 跳轉到目標 URL
+    });
+  });

@@ -21,41 +21,41 @@
 </head>
 <body>
 
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light" >
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="#"><img width="80px" hight="80px" src="../image/logo.png"></a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-	  
-		  <div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">首頁</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="announcement.html">酒店公告</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="subjecthotel.html">主題酒店</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="ticket.html">樂園門票</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="show.html">精彩演藝</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="restaurant.html">食尚饗宴</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="about.html">關於我們</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
+	 <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="index.html"><img width="80px" hight="80px" src="../image/logo.png"></a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+  
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="announcement.html">酒店公告</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="subjecthotel.html">主題酒店</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="ticket.html">樂園門票</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="show.html">精彩演藝</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="restaurant.html">食尚饗宴</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="about.html">關於我們</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
 
 
 	<div class="container">
@@ -72,22 +72,22 @@
 
 		<div class="row">
 			<div class="col-sm-3">
-				<img src="../image/rollercoaster.jpg" alt="Roller Coaster" class="img-responsive">
+				<img src="../image/rollercoaster.jpg" alt="Roller Coaster" class="img-responsive" style="width: 400px; height: 200px; padding: 10px;">
 				<h3>雲霄飛車</h3>
 				<p>激烈刺激，飛馳於高空！</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="../image/ferriswheel.jpg" alt="Ferris Wheel" class="img-responsive">
+				<img src="../image/ferriswheel.jpg" alt="Ferris Wheel" class="img-responsive" style="width: 400px; height: 200px; padding: 10px;">
 				<h3>摩天輪</h3>
 				<p>俯瞰城市，享受美好風景！</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="../image/carousel.jpg" alt="Carousel" class="img-responsive">
+				<img src="../image/carousel.jpg" alt="Carousel" class="img-responsive" style="width: 400px; height: 200px; padding: 10px;">
 				<h3>旋轉木馬</h3>
 				<p>經典遊樂設施，適合所有年齡段的遊客！</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="../image/bumpercar.jpg" alt="Bumper Cars" class="img-responsive">
+				<img src="../image/bumpercar.jpg" alt="Bumper Cars" class="img-responsive" style="width: 400px; height: 200px; padding: 10px;">
 				<h3>碰碰車</h3>
 				<p>享受刺激的碰撞，成為王者！</p>
 			</div>
@@ -100,7 +100,7 @@
 
 		<hr>
 		<h3>開放</h3>
-		<ul>
+		<ul class="open-time">
 			<li>周一至周五：上午10:00至下午6:00</li>
 			<li>周六、周日和假日：上午9:00至下午7:00</li>
 		</ul>
@@ -116,7 +116,7 @@
 				</label>
 			</div>
 			<div class="form-group">
-				<label for="quantity">選擇數量</label>
+				<label class="quantity" for="quantity">選擇數量</label>
 				<input type="number" class="form-control" id="quantity" value="1" min="1">
 			</div>
 			<button type="button" class="btn btn-primary" onclick="calculatePrice()">計算票價</button>
