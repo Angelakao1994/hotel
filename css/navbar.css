@@ -12,9 +12,9 @@ nav{
     padding:20px;
 }
 /*navbar底色*/
-.navbar{
-    background-color: rgb(248, 210, 179);
-}
+.navbar {
+    background-color: #a03737; 
+  }
 /*字體顏色及大小*/
 li a{
     color:rgb(0, 0, 0) !important;

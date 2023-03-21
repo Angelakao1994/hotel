@@ -4,53 +4,6 @@ body {
   }
   
 
-
-
-/* 導覽列背景色 */
-.navbar {
-  background-color: #4e4b4f; 
-}
-li a{
-  color:rgb(255, 255, 255) !important;
-  font-size:20px;
-  
-}
-li a:hover{
-  font-family:Arial, sans-serif;
-  color:rgb(0, 0, 0) !important;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: left;
-}
-
-.navbar-brand {
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #4e4b4f;
-  text-decoration: none;
-}
-
-.navbar-nav {
-  margin-left: auto;
-}
-
-.nav-item {
-  margin-right: 20px;
-}
-
-.nav-link {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333333;
-  text-decoration: none;
-}
-
-
-
-
   h1, h2, h3 {
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -111,8 +64,6 @@ li a:hover{
 
   
 
-
-
   .form-group label,
   .form-group input[type="number"],
   .btn {
@@ -136,9 +87,9 @@ li a:hover{
   }
 
 
-  /* 導覽列背景色 */
+ /* 導覽列背景色header color */
 .navbar {
-  background-color: #4e4b4f; 
+  background-color: #a03737; 
 }
 li a{
   color:rgb(255, 255, 255) !important;
@@ -181,6 +132,7 @@ li a:hover{
 .nav-link:hover {
   color: #844141;
 }
+
 
 .open-time{
    list-style: none;

@@ -52,6 +52,24 @@ p4{
 }
 
 
+h5 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  display: none;
+}
+
+
+
+
+
+
 /* learn more按鈕樣式 */
 .btn {
   display: inline-block;
@@ -70,9 +88,9 @@ p4{
   background-color: #4e4b4f;
 }
 
-/* 導覽列背景色 */
+/* 導覽列背景色header color */
 .navbar {
-  background-color: #4e4b4f; 
+  background-color: #a03737; 
 }
 li a{
   color:rgb(255, 255, 255) !important;
@@ -121,14 +139,4 @@ li a:hover{
   background-color: #7ac13c;
   padding: 80px 0;
 }
-
-/* 設置搜尋框的位置 */
-.search-container {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-
-
 
