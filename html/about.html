@@ -15,42 +15,186 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/about.css">
 
+
+    <style>
+      #map { height: 300px; }
+  </style>
+
+
 </head>
 <body>
-     <!-- Navbar -->
+
+
+
+
+      <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img width="80px" hight="80px" src="../image/logo.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img width="80px" hight="80px" src="../image/logo1.jpg"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="announcement.html">酒店公告</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="subjecthotel.html">主題酒店</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ticket.html">樂園門票</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="show.html">精彩演藝</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="restaurant.html">食尚饗宴</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">關於我們</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      
+
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col text-center">
+  <h1>關於我們</h1>
+  <p>坐落於國際知名大溪高爾夫球場旁，桃園大溪笠復威斯汀度假酒店遠離世俗
+      塵囂喧擾，提供無與倫比、徹底紓壓的極致度假體驗。全館擁有205間舒適房型，每間皆
+      有獨立觀景陽台，暢享綠意遼闊的宜人景觀；結合獨特的山嵐綠意南洋風情戶外泳池、聞名於
+      世的天夢之床酣然好眠、頂級威斯汀天夢芳療專業呵護、適合各年齡層的多元室內外休閒
+      設施、精緻獨特中西美饌饗宴，造訪賓客得以在優雅靜謐的簡約奢華
+      之中，享受身心靈的全然放鬆。</p>
+</section>
+
+
+
+<!-- 聯絡資訊及地圖等建立 -->
+<div id="container-1" class="container">
+  <h2>Contact Information</h2>
+  <p>Name: Mr. Yang</p>
+  <p>Email: mryang@example.com</p>
+  <p>Phone: 123-456-7890</p>
+  <h2>Address</h2>
+  <p>123 Main Street</p>
+  <p>XXXXXXXXXXXXXXXX, Taipei, TW</p>
+
+
+
+  <!-- 在此添加地图元素 -->
+<div class="container">
+  <h2>Table with Map</h2>
+  <table class="table table-striped">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Map</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>John Doe</td>
+              <td>123 Main St.</td>
+              <td>
+                  <div id="map"></div>
+                  <script>
+                      var map = L.map('map').setView([51.505, -0.09], 13);
+                      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                          maxZoom: 19,
+                          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+                      }).addTo(map);
+                      L.marker([51.5, -0.09]).addTo(map)
+                          .bindPopup('A marker for John Doe\'s location.')
+                          .openPopup();
+                  </script>
+              </td>
+          </tr>
+          <tr>
+              <td>Jane</td>
+              <td>456 Oak St.</td>
+                    <td>
+                        <div id="map2"></div>
+                        <script>
+                            var map2 = L.map('map2').setView([40.7128, -74.0060], 13);
+                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                maxZoom: 19,
+                                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+                            }).addTo(map2);
+                            L.marker([40.7128, -74.0060]).addTo(map2)
+                                .bindPopup('A marker for Jane Smith\'s location.')
+                                .openPopup();
+                        </script>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 底部導覽列建立 -->
+<footer class="bg-info text-white"> <!--這裡改底部配色-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Footer Section 1</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+            <a class="nav-link active" href="../html/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="announcement.html">酒店公告</a>
+            <a class="nav-link active" href="../html/about.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="subjecthotel.html">主題酒店</a>
+            <a class="nav-link active" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ticket.html">樂園門票</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="show.html">精彩演藝</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="restaurant.html">食尚饗宴</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">關於我們</a>
+            <a class="nav-link active" href="#">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+  </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 引入 Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+
+
+
+
 </body>
 </html>

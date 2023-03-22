@@ -1,4 +1,50 @@
- /* 導覽列背景色 */
+
+/* 背景顏色 */
+body {
+  background-color: #4e4b4f;
+}
+
+h1, h2, h3{
+  color: #ffffff;
+}
+
+p{
+  color: #ffffff;
+}
+
+/*聯絡資訊及地圖等建立*/
+#container-1 {
+  text-align: center;
+
+}
+
+/*底部地圖表格資訊*/
+th {
+  text-align: center;
+}
+
+
+
+
+
+/*底部導航列設置*/
+h5 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  display: none;
+}
+ 
+ 
+ 
+ 
+ /* 漢堡導覽列背景色 */
  .navbar {
   background-color: #a03737; 
   }

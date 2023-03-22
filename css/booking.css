@@ -1,0 +1,143 @@
+/* 背景顏色 */
+body {
+    background-color: #4e4b4f;
+  }
+  
+  /* 歡迎來到楊仙森梅酒 - 文字樣式 */
+  h1{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #4e4b4f;
+  }
+  p1{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4e4b4f;
+  }
+  /*關於我們 - 樣式*/
+  h2{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  p2{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  /*房型 - 樣式*/
+  h3{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  p3{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  h4{  
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #4e4b4f;
+  }
+  p4{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4e4b4f;
+  }
+  
+  
+  h5 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  /* learn more按鈕樣式 */
+  .btn {
+    display: inline-block;
+    padding: 5px 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #892e2e;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  }
+  /*learn more字體滑過背景色*/
+  .btn:hover {
+    background-color: #4e4b4f;
+  }
+  
+  /* 導覽列背景色header color */
+  .navbar {
+    background-color: #a03737; 
+  }
+  li a{
+    color:rgb(255, 255, 255) !important;
+    font-size:20px;
+    
+  }
+  li a:hover{
+    font-family:Arial, sans-serif;
+    color:rgb(0, 0, 0) !important;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: left;
+  }
+  
+  .navbar-brand {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4e4b4f;
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #844141;
+  }
+  
+  /* 房型區塊樣式 */
+  .room-section {
+    background-color: #7ac13c;
+    padding: 80px 0;
+  }
+  
+  

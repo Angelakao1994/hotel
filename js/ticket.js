@@ -13,3 +13,5 @@ $(document).ready(function() {
     window.location.href = href; // 跳轉到目標 URL
   });
 });
+
+

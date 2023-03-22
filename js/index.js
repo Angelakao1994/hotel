@@ -15,18 +15,4 @@ function goToPage(url) {
   });
 
 
-  // 捲軸滾動時檢查是否顯示回到頂部按鈕
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
-      $('#back-to-top').removeClass('d-none');
-    } else {
-      $('#back-to-top').addClass('d-none');
-    }
-  });
   
-  // 當回到頂部按鈕被點擊時，捲動頁面到頂部
-  $('#back-to-top').click(function() {
-    $('html, body').animate({scrollTop: 0}, 800);
-    return false;
-  });
-</script>
