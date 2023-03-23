@@ -13,47 +13,129 @@
     <!--上面這行是將index.css導入頁面的做法, 此舉將不會導致程式碼在一個頁面呈現過多行數-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/restaurant.css">
+    
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+ 
+    
 
-
-</head>
-<body>
+    <style>
+      .slide {
+        margin: auto;
+        width: 100%;
+        height: 80%;
+      }
+  
+      .slide img {
+        width: 100%;
+        height: 80%;
+      }
 
   
-   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img width="80px" hight="80px" src="../image/logo1.jpg"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="announcement.html">酒店公告</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="subjecthotel.html">主題酒店</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ticket.html">樂園門票</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="show.html">精彩演藝</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="restaurant.html">食尚饗宴</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">關於我們</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+
+    </style>
+
+
+
+
+
+  <!--頂部自動輪播建立-->
+<div class="slide">
+		<div><img src="../image/hotel1.jpg"></div>
+		<div><img src="../image/hotel2.jpg"></div>
+    <div><img src="../image/hotel3.jpg"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script>
+		$('.slide').slick({
+			autoplay: true,
+			arrows: true,
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear'
+		});
+	</script>
+
+
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col text-center">
+  <h2>介紹</h2>
+  <p2>坐落於國際知名大溪高爾夫球場旁，桃園大溪笠復威斯汀度假酒店遠離世俗
+      塵囂喧擾，提供無與倫比、徹底紓壓的極致度假體驗。全館擁有205間舒適房型，每間皆
+      有獨立觀景陽台，暢享綠意遼闊的宜人景觀；結合獨特的山嵐綠意南洋風情戶外泳池、聞名於
+      世的天夢之床酣然好眠、頂級威斯汀天夢芳療專業呵護、適合各年齡層的多元室內外休閒
+      設施、精緻獨特中西美饌饗宴，造訪賓客得以在優雅靜謐的簡約奢華
+      之中，享受身心靈的全然放鬆。坐落於國際知名大溪高爾夫球場旁，桃園大溪笠復威斯汀度假酒店遠離世俗
+      塵囂喧擾，提供無與倫比、徹底紓壓的極致度假體驗。全館擁有205間舒適房型，每間皆
+      有獨立觀景陽台，暢享綠意遼闊的宜人景觀；結合獨特的山嵐綠意南洋風情戶外泳池、聞名於
+      世的天夢之床酣然好眠、頂級威斯汀天夢芳療專業呵護、適合各年齡層的多元室內外休閒
+      設施、精緻獨特中西美饌饗宴，造訪賓客得以在優雅靜謐的簡約奢華
+      之中，享受身心靈的全然放鬆。</p2>
+</section>
+
+
+
+
+
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <img src="../image/room1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 1</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <img src="../image/room2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 2</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <img src="../image/room1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 1</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <img src="../image/room2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 2</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+  
+  
       
 
 
