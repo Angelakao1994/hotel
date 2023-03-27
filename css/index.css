@@ -66,10 +66,6 @@ h5 {
 }
 
 
-
-
-
-
 /* learn more按鈕樣式 */
 .btn {
   display: inline-block;
@@ -86,52 +82,6 @@ h5 {
 /*learn more字體滑過背景色*/
 .btn:hover {
   background-color: #4e4b4f;
-}
-
-/* 導覽列背景色header color */
-.navbar {
-  background-color: #a03737; 
-}
-li a{
-  color:rgb(255, 255, 255) !important;
-  font-size:20px;
-  
-}
-li a:hover{
-  font-family:Arial, sans-serif;
-  color:rgb(0, 0, 0) !important;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: left;
-}
-
-.navbar-brand {
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #4e4b4f;
-  text-decoration: none;
-}
-
-.navbar-nav {
-  margin-left: auto;
-}
-
-.nav-item {
-  margin-right: 20px;
-}
-
-.nav-link {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333333;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: #844141;
 }
 
 /* 房型區塊樣式 */
