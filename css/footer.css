@@ -1,0 +1,20 @@
+.footer-link {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+  }
+  
+
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px; /* 設定footer的高度 */
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+  
+  }
