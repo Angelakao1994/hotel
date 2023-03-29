@@ -1,4 +1,5 @@
-$('#header').load('../html/home.html');
+$('#header').load('../html/header.html');
+$('#footer').load('../html/footer.html');
 
 
 /* "hamburger"-->在每個頁面的連結上加上了一個onclick屬性，當用戶點擊

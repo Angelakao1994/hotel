@@ -1,4 +1,5 @@
-$('#header').load('../html/home.html');
+$('#header').load('../html/header.html');
+$('#footer').load('../html/footer.html');
 
 
 
