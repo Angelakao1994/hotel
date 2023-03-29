@@ -1,46 +1,53 @@
 /* 背景顏色 */
 body {
-  background-color: #4e4b4f;
+  background-color: #ffffff;
 }
 
 /* 歡迎來到楊仙森梅酒 - 文字樣式 */
 h1{
   font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
   font-weight: bold;
   color: #4e4b4f;
 }
 p1{
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 10px;
+  text-align: center;
   line-height: 1.5;
   color: #4e4b4f;
 }
-/*關於我們 - 樣式*/
+/*intro - 樣式*/
 h2{
   font-family: Arial, sans-serif;
+  font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
+  color: #4e4b4f;
+  padding: 0;
 }
 p2{
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #ffffff;
+  color: #4e4b4f;
 }
 /*房型 - 樣式*/
 h3{
   font-family: Arial, sans-serif;
+  font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
+  color: #4e4b4f;
 }
 p3{
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #ffffff;
+  color: #4e4b4f;
 }
 h4{  
   font-family: Arial, sans-serif;
+  font-size: 20px;
   font-weight: bold;
   color: #4e4b4f;
 }
@@ -55,7 +62,7 @@ p4{
 h5 {
   font-family: Arial, sans-serif;
   font-weight: bold;
-  color: #ffffff;
+  color: #4e4b4f;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -66,12 +73,61 @@ h5 {
 }
 
 
+.image-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-block {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image-block img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
+.image-block-offset {
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*輪播圖區隔顏色*/
+.carousel{
+  background-color: transparent;
+}
+
+
+
+
+
 /* learn more按鈕樣式 */
 .btn {
   display: inline-block;
   padding: 5px 8px;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   color: #ffffff;
   background-color: #892e2e;
@@ -89,4 +145,3 @@ h5 {
   background-color: #7ac13c;
   padding: 80px 0;
 }
-

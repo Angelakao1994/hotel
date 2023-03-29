@@ -1,7 +1,7 @@
 
 /*網頁背景色*/
 body{
-    background-color:rgb(250, 185, 131);
+    background-color:#fff;
 }
 /*navbar整體高度*/
 nav{
@@ -13,8 +13,9 @@ nav{
 }
 /*navbar底色*/
 .navbar {
-    background-color: #a03737; 
+    background-color: transparent; 
   }
+  
 /*字體顏色及大小*/
 li a{
     color:rgb(0, 0, 0) !important;
