@@ -48,13 +48,6 @@ h5 {
   display: none;
 }
 
-#copyright{
-  text-align: center;
-  padding: 3px;
-  font-family: Arial, sans-serif;
-  font-size: 10px;
-  color: #4e4b4f;
-}
 
 
 
@@ -62,7 +55,7 @@ h5 {
 .image-container {
   display: flex;
   align-items: center; /* 垂直置中 */
-  opacity: 0.78;
+  opacity: 0.9;
 }
 
 .left-column {
@@ -129,37 +122,7 @@ h5 {
 
 
 
-/*輪播圖區隔顏色*/
-.carousel{
-  background-color: transparent;
-  margin-bottom: 20px;
-  opacity: 0.78;
-}
 
 
 
 
-
-/* learn more按鈕樣式 */
-.btn {
-  display: inline-block;
-  padding: 5px 8px;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #892e2e;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-}
-/*learn more字體滑過背景色*/
-.btn:hover {
-  background-color: #4e4b4f;
-}
-
-/* 房型區塊樣式 */
-.room-section {
-  background-color: #7ac13c;
-  padding: 80px 0;
-}

@@ -1,39 +1,42 @@
-
-/*網頁背景色*/
-body{
-    background-color:#fff;
-}
-/*navbar整體高度*/
-nav{
-    height:70px;
-}
-/*navbar滑鼠滑過呈現的高度*/
-.nav-link{
-    padding:20px;
-}
-/*navbar底色*/
-.navbar {
-    background-color: transparent; 
+/* 網頁背景色 */
+body {
+    background-color: #fff;
   }
   
-/*字體顏色及大小*/
-li a{
-    color:rgb(0, 0, 0) !important;
-    font-size:20px;
-}
-/*字體被景色及字體色*/
-li a:hover{
-    color:rgb(255, 255, 255) !important;
+  /* navbar整體高度 */
+  nav {
+    height: 70px;
+  }
+  
+  /* navbar滑鼠滑過呈現的高度 */
+  .nav-link {
+    padding: 20px;
+  }
+  
+  /* navbar底色 */
+  .navbar {
+    background-color: #0c0c0c;
+  }
+  
+  /* 字體顏色及大小 */
+  li a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  
+  /* 字體被景色及字體色 */
+  li a:hover {
+    color: rgb(255, 255, 255);
     background-color: rgb(243, 159, 110);
-}
-
-
-/*調整手機版本檢視視窗*/
-@media(max-width:600px){
-    nav{
-        height:auto;
+  }
+  
+  /* 調整手機版本檢視視窗 */
+  @media (max-width: 600px) {
+    nav {
+      height: auto;
     }
-    .nav-link{
-        padding:10px;
+    .nav-link {
+      padding: 10px;
     }
-}
+  }
+  

@@ -1,19 +1,34 @@
 
 /* 背景顏色 */
 body {
-  background-color: #4e4b4f;
+  background-color: #ffffff;
 }
 
-h1, h2, h3{
-  color: #ffffff;
-}
-
-p{
-  color: #ffffff;
-}
-
-/*聯絡資訊及地圖等建立*/
-#container-1 {
+h1, p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #4e4b4f;
+  line-height: 1.5;
   text-align: center;
-
+  margin: auto;
 }
+
+h2, p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #4e4b4f;
+  line-height: 1.5;
+  text-align: center;
+  margin: auto;
+}
+
+#about {
+  padding: 50px 0;
+}
+
+#container-1 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+

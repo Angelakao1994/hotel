@@ -1,0 +1,6 @@
+/*輪播圖區隔顏色*/
+.carousel{
+    background-color: transparent;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
