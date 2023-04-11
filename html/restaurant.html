@@ -4,132 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <!-- Custom CSS -->
+    
+    <title>楊先森梅酒</title>
+    <!-- Bootstrap + Custom CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--上面這行是將index.css導入頁面的做法, 此舉將不會導致程式碼在一個頁面呈現過多行數-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/restaurant.css">
-    
-    
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
- 
-    
+    <link rel="stylesheet" href="../css/index.css">
 
-    <style>
-      .slide {
-        margin: auto;
-        width: 100%;
-        height: 80%;
-      }
+
+
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="header"></div>
+  <div id="carousel"></div>
+
   
-      .slide img {
-        width: 100%;
-        height: 80%;
-      }
-
-    </style>
 
 
 
 
 
-  <!--頂部自動輪播建立-->
-<div class="slide">
-		<div><img src="../image/hotel1.jpg"></div>
-		<div><img src="../image/hotel2.jpg"></div>
-    <div><img src="../image/hotel3.jpg"></div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-	<script>
-		$('.slide').slick({
-			autoplay: true,
-			arrows: true,
-			dots: true,
-			infinite: true,
-			speed: 500,
-			fade: true,
-			cssEase: 'linear'
-		});
-	</script>
-
-
-<section id="about" class="py-5">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col text-center">
-  <h2>介紹</h2>
-  <p2>坐落於國際知名大溪高爾夫球場旁，桃園大溪笠復威斯汀度假酒店遠離世俗
-      塵囂喧擾，提供無與倫比、徹底紓壓的極致度假體驗。全館擁有205間舒適房型，每間皆
-      有獨立觀景陽台，暢享綠意遼闊的宜人景觀；結合獨特的山嵐綠意南洋風情戶外泳池、聞名於
-      世的天夢之床酣然好眠、頂級威斯汀天夢芳療專業呵護、適合各年齡層的多元室內外休閒
-      設施、精緻獨特中西美饌饗宴，造訪賓客得以在優雅靜謐的簡約奢華
-      之中，享受身心靈的全然放鬆。坐落於國際知名大溪高爾夫球場旁，桃園大溪笠復威斯汀度假酒店遠離世俗
-      塵囂喧擾，提供無與倫比、徹底紓壓的極致度假體驗。全館擁有205間舒適房型，每間皆
-      有獨立觀景陽台，暢享綠意遼闊的宜人景觀；結合獨特的山嵐綠意南洋風情戶外泳池、聞名於
-      世的天夢之床酣然好眠、頂級威斯汀天夢芳療專業呵護、適合各年齡層的多元室內外休閒
-      設施、精緻獨特中西美饌饗宴，造訪賓客得以在優雅靜謐的簡約奢華
-      之中，享受身心靈的全然放鬆。</p2>
+<!-- Intro Section -->
+<section id="intro" class="py-2">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col text-center">
+    <h2>餐廳</h2>
+    <p2>人人都愛泳池派對，尤其是當世界頂級DJ為您演出精彩旋律與您共舞，或是參與「W熱門動向」所舉辦的精彩活動，都將會是你在台北體驗到最獨特迷人的夜晚。您可在池畔享受我們精心調製的創意特調與誘人美食，並在璀璨星空下交朋會友。</p2>
 </section>
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="card">
-                    <img src="../image/room1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title 1</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card">
-                    <img src="../image/room2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title 2</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-              <div class="container">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="card">
-                    <img src="../image/room1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title 1</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card">
-                    <img src="../image/room2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title 2</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-<div id="copyright"></div>
-<div id="footer"></div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<!--圖片左右排序-->
+<div class="image-container">
+  <div class="left-column">
+    <div class="img-wrapper">
+      <img src="../image/restaurant2.jpg" class="img1">
+      <div class="img-text">餐廳介紹</div>
+    </div>
+  </div>
+  <div class="right-column">
+    <div class="img-wrapper">
+      <img src="../image/restaurant1.jpg" class="img2">
+      <div class="img-text">佳餚美食</div>
+    </div>
+    <div class="img-wrapper">
+      <img src="../image/restaurant3.jpg" class="img3">
+      <div class="img-text">夜上海</div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--底部圖片-->
+<div class="image-container my-specific-container">
+  <img src="../image/restaurant4.jpg" id="img-bottom">
+</div>
+
+
+
+
+
+
+
+  <div id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/restaurant.js"></script>
+  <script src="../js/index.js"></script>
 
 </body>
 </html>

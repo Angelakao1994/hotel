@@ -1,18 +1,102 @@
-.footer-link {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333333;
-    text-decoration: none;
-  }
-  
-  footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 40px; /* 設定footer的高度 */
-    background-color: #333333;
-    color: #ffffff;
-    text-align: center;
-  
-  }
+
+/* 設定 footer 的樣式 */
+footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+/* 設定 About Us 區塊的樣式 */
+footer .about-us {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer .about-us h4 {
+  color: #343a40;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer .about-us p {
+  margin-bottom: 20px;
+}
+
+/* 設定 Contact Us 區塊的樣式 */
+footer .contact-us {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer .contact-us h4 {
+  color: #343a40;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer .contact-us ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+footer .contact-us ul li {
+  margin-bottom: 5px;
+}
+
+footer .contact-us ul li i {
+  margin-right: 5px;
+  color: #007bff;
+}
+
+/* 設定 Follow Us 區塊的樣式 */
+footer .follow-us {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer .follow-us h4 {
+  color: #343a40;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer .follow-us p {
+  margin-bottom: 10px;
+}
+
+footer .follow-us ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+footer .follow-us ul li {
+  color: #343a40;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+footer .follow-us ul li a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.follow-links a {
+  color: #343a40; /* 設定為黑色文字 */
+  text-decoration: underline; /* 加底線 */
+}
+
+
+/* 設定版權的樣式 */
+footer .copy {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer .copy p {
+  color: #343a40;
+  font-size: 14px;
+}
