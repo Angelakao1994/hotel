@@ -4,118 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>樂園門票</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- 引用 Bootstrap 的 CSS 文件 -->
+    
+    <title>楊先森樂園</title>
+    <!-- Bootstrap + Custom CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--上面這行是將index.css導入頁面的做法, 此舉將不會導致程式碼在一個頁面呈現過多行數-->
-	<link rel="stylesheet" href="../css/ticket.css">
+    <link rel="stylesheet" href="../css/ticket.css">
+
+
+
+
 
 </head>
+
 <body>
-	
-	<div id="header"></div>
+  <!-- Navbar -->
+  <div id="header"></div>
+  <div id="carousel"></div>
 
+  
 
-	<div class="container">
-		<h1>歡迎來到楊先森樂園</h1>
-        <br>
-
-        <h2>園區介紹</h2>
-            <hr>
-		<p>楊先森樂園位於台灣南部，佔地面積達10萬平方公尺，是台灣最大的主題樂園之一。</p>
-		<p>樂園裡有多條刺激的過山車、各種好玩的娛樂設施、美食小吃等等，讓遊客可以盡情享受遊樂的樂趣。</p>
-		<p>此外，樂園的綠化設計也非常優秀，每年春季時節更有櫻花、桃花等美麗的花卉盛開，吸引了無數遊客前來觀賞。</p>
-		<p>歡迎大家前來楊先森樂園遊玩，度過一個愉快的假期！</p>
-            <br>
+  <div class="container">
+	<h1>歡迎來到楊先森樂園</h1>
+	<form>
 
 		<div class="row">
-			<div class="col-sm-3">
-				<img src="../image/rollercoaster.jpg" alt="Roller Coaster" class="img-responsive" style="width: 100%; height: 100%; padding: 10px;">
-				<h3>雲霄飛車</h3>
-				<p>激烈刺激，飛馳於高空！</p>
+			<div class="col-md-4">
+				<div class="attraction">
+					<img src="../image/bumpercar.jpg" alt="Attraction 1">
+					<h2>碰碰車</h2>
+					<p>Description of the attraction 1.</p>
+				</div>
 			</div>
-			<div class="col-sm-3">
-				<img src="../image/ferriswheel.jpg" alt="Ferris Wheel" class="img-responsive" style="width: 100%; height: 100%; padding: 10px;">
-				<h3>摩天輪</h3>
-				<p>俯瞰城市，享受美好風景！</p>
+			<div class="col-md-4">
+				<div class="attraction">
+					<img src="../image/carousel.jpg" alt="Attraction 2">
+					<h2>旋轉木馬</h2>
+					<p>Description of the attraction 2.</p>
+				</div>
 			</div>
-			<div class="col-sm-3">
-				<img src="../image/carousel.jpg" alt="Carousel" class="img-responsive" style="width: 100%; height: 100%; padding: 10px;">
-				<h3>旋轉木馬</h3>
-				<p>經典遊樂設施，適合所有年齡段的遊客！</p>
-			</div>
-			<div class="col-sm-3">
-				<img src="../image/bumpercar.jpg" alt="Bumper Cars" class="img-responsive" style="width: 100%; height: 100%; padding: 10px;">
-				<h3>碰碰車</h3>
-				<p>享受刺激的碰撞，成為王者！</p>
+			<div class="col-md-4">
+				<div class="attraction">
+					<img src="../image/ferriswheel.jpg" alt="Attraction 3">
+					<h2>摩天輪</h2>
+					<p>Description of the attraction 3.</p>
+				</div>
 			</div>
 		</div>
+		
 
-        
-
-
-		<hr>
-		<h3>開放</h3>
-		<ul class="open-time">
-			<li>周一至周五：上午10:00至下午6:00</li>
-			<li>周六、周日和假日：上午9:00至下午7:00</li>
-		</ul>
-		<hr>
-		<form>
-            <h3>選擇門票</h3>
-			<div class="form-group">
-				<label class="radio-inline">
-					<input type="radio" name="ticket" value="adult" checked> 成人票 ($550)
-				</label>
-				<label class="radio-inline">
-					<input type="radio" name="ticket" value="child"> 兒童票 ($300)
-				</label>
+		<div class="form-group row">
+			<label for="ticketQuantity" class="col-sm-2 col-form-label">門票數量:</label>
+			<div class="col-sm-10">
+				<input type="number" class="form-control" id="ticketQuantity" value="1">
 			</div>
-			<div class="form-group">
-				<label class="quantity" for="quantity">選擇數量</label>
-				<input type="number" class="form-control" id="quantity" value="1" min="1">
+		</div>
+		<div class="form-group row">
+			<label for="date" class="col-sm-2 col-form-label">日期:</label>
+			<div class="col-sm-10">
+				<input type="date" class="form-control" id="date">
 			</div>
-			<button type="button" class="btn btn-primary" onclick="calculatePrice()">計算票價</button>
-			<hr>
-			<p id="price">Total：$0</p>
-		</form>
-	</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-sm-10 offset-sm-2">
+				<button type="submit" class="btn btn-primary btn-lg btn-block">計算價格 <i class="fas fa-calculator"></i></button>
+			</div>
+		</div>
+	</form>
+	<div class="price text-center"></div>
+</div>
 
-	
-
-    <div id="footer"></div>
 
 
 
+
+
+
+
+
+
+
+
+  <div id="footer"></div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script src="../js/ticket.js"></script>
 
-
-	<script>
-		
-		function calculatePrice() {
-			// 獲取選擇的門票類型和數量
-			var ticketType = $("input[name='ticket']:checked").val();
-			var quantity = $("#quantity").val();
-			// 計算票價
-			var price = 0;
-			if (ticketType === "adult") {
-				price = 550;
-			} else if (ticketType === "child") {
-				price = 300;
-			}
-			price *= quantity;
-			// 更新顯示的票價
-			$("#price").text("門票價格：$" + price);
-		}
-	</script>
-
-    
 </body>
 </html>
+

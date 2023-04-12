@@ -3,19 +3,26 @@ $('#carousel').load('../html/carousel.html');
 $('#footer').load('../html/footer.html');
 
 
-/* "hamburger"-->在每個頁面的連結上加上了一個onclick屬性，當用戶點擊
-這些連結時，會調用goToPage()函數。goToPage()函數的作用是將當前頁面的
-URL設置為我們要跳轉到的URL，這樣就能在當前頁面中跳轉，而不是加載到新頁面。*/
 
-function goToPage(url) {
-  window.location.href = url;
-}
+$("form").submit(function(e) {
+  e.preventDefault();
+  var ticketQuantity = $("#ticketQuantity").val();
+  var date = $("#date").val();
+  // 假設每張門票的價格為100元
+  var ticketPrice = 100;
+  // 假設有一個折扣碼為"DISCOUNT20"，可以獲得20%的折扣
+  var discountCode = "DISCOUNT20";
+  var discountRate = 0.2; // 20%的折扣率
 
-$(document).ready(function() {
-  $('.nav-link').click(function(e) {
-    e.preventDefault(); // 阻止默認行為
-    var href = $(this).attr('href'); // 獲取目標 URL
-    window.location.href = href; // 跳轉到目標 URL
-  });
+  // 計算價格
+  var totalPrice = ticketPrice * ticketQuantity;
+  if (date == "2023-04-13") { // 假設2023年4月13日為特別價格日，門票價格打7折
+    totalPrice *= 0.7;
+  }
+  if ($("#discountCode").val() == discountCode) {
+    totalPrice *= (1 - discountRate); // 應用折扣碼
+  }
+
+  // 顯示結果
+  $(".price").text("總價格：" + totalPrice + "元");
 });
-

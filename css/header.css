@@ -1,9 +1,9 @@
 /* 導覽列背景色header color */
 .navbar {
-    background-color: #a03737; 
+    background-color: #ffffff; 
   }
   li a{
-    color:rgb(255, 255, 255) !important;
+    color:#4e4b4f !important;
     font-size:20px;
     
   }
